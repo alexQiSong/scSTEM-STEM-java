@@ -1,3 +1,19 @@
+Update on 2021:
+A new version - scSTEM and its source code have been added alongside STEM.
+The following new functions are added to scSTEM: 
+1. Comparing profile clusters in two datasets
+2. Comparing datasets with different number of time points
+3. More command line options
+   Specify the default config file: -d defaultFileName
+   Specify input data file: -i DatasetName
+   Compare the profiles from two datasets: -c Dataset1 Dataset2
+   Compare the clusters from two datasets: -c Dataset1 Dataset2 -C
+   Auto Mode (execute automatically, no need to click button): -a
+   E.g. 
+   java -mx1024M -jar scSTEM.jar -d  stem_setting_template -c data1.tsv data2.tsv -a -C
+   This will use the settings in "stem_setting_template" and compare the profile clusters
+   in "data1.tsv" and "data2.tsv" under auto mode.
+-------------------------------------------------------------------------------
 Version 1.3.13 of the Short Time-series Expression Miner (STEM)
 -------------------------------------------------------------------------------
 STEM was developed by Jason Ernst, Dima Patek, and Ziv Bar-Joseph. 
